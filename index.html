@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Stock Algorithm</title>
+    <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0"> </script>
+    <!-- <link rel="icon" href="URL"> -->
+</head>
+
+<body>
+    
+    <nav>
+        <input id="symbol-input" placeholder="Enter a symbol" onkeydown="if(event.keyCode==13) { getData(); return false; }" value="tsla">
+        <button id="search-button" onclick="getData()"><i class="fa fa-search"></i></button>
+    </nav>
+
+    <div class="graph-container">
+        <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+        <div id="graph"></div>
+    </div>
+
+</body>
+</html>
