@@ -1,6 +1,4 @@
-//  using verifyClose (og)
-
-async function getData () {
+function getData () {
     console.clear();
     let symbol = document.getElementById('symbol-input').value;
     // fetch('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' + symbol + '&interval=1min&apikey=LI6KQURHNB85O9B4')
